@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "authorai"
+version = "0.1.0"
+description = "AuthorAI CLI"
+authors = ["Jason W."]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "authorai", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+typer = "^0.19.2"
+rich = "^14.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+ruff = "^0.13.1"
+
+[tool.poetry.scripts]
+authorai = "authorai.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
