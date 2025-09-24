@@ -1,0 +1,2 @@
+# AuthorAI
+Initial bootstrap.
