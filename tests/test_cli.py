@@ -1,5 +1,6 @@
 ﻿from pathlib import Path
-import subprocess, sys
+import subprocess
+import sys
 
 def run_cli(*a):
     return subprocess.run([sys.executable, "-m", "authorai.cli", *a], capture_output=True, text=True)

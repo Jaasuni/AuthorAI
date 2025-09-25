@@ -1,5 +1,7 @@
 ﻿from pathlib import Path
-import json, subprocess, sys
+import json
+import subprocess
+import sys
 
 def run_cli(*a):
     return subprocess.run([sys.executable, "-m", "authorai.cli", *a], capture_output=True, text=True)
